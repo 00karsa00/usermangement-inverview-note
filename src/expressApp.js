@@ -17,6 +17,10 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // Routes setup
 app.use('/users', userRouter);
 
+app.get('/', (req, res) =>{
+  res.send("Welcome!! server is running")
+});
+
 
 // Fallback route for non-existing endpoints
 app.use('*', (req, res) => {
