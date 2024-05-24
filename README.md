@@ -27,9 +27,19 @@ This is a Node.js application for managing users. The application uses MongoDB f
 ## Running the Application
     npm run dev
 
-## CI/CD with GitHub Actions
-This project uses GitHub Actions for continuous integration and deployment.
+## API Documentation
+    To facilitate API testing, a Postman collection is provided.
 
-Setting up GitHub Actions
-Create a .github/workflows directory in the root of your project.
-Add a ci.yml file in the .github/workflows directory with the following content:
+    Importing the Postman Collection
+    Open Postman.
+    Click on the Import button in the top left corner.
+    Select the Collection tab.
+    Drag and drop the JSON file located in the postman_collection folder of this repository, or click Upload Files and select the file manually.
+    The collection will be imported, and you can now use the predefined requests to test the API.
+
+## CI/CD with GitHub Actions
+    This project uses GitHub Actions for continuous integration and deployment.
+
+    Setting up GitHub Actions
+    Create a .github/workflows directory in the root of your project.
+    Add a ci.yml file in the .github/workflows directory with the following content:
